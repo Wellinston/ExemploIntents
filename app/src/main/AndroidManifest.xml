@@ -43,7 +43,10 @@
             android:name=".implicito.ExImplicitoDetalhe"
             android:label="Outra Atividade"
             android:exported="false">
-            <!-- definição de nome aqui -->
+            <intent-filter>
+                <action android:name="br.senac.exemplointents.EXEMPLO"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
         </activity>
 
         <!-- Atividades de exemplo de intents que passam parâmetros extras -->
